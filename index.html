@@ -9,13 +9,13 @@
 <meta property="og:title" content="Matteo Paonessa | Marketing projects">
 <meta property="og:description" content="Theses and strategy projects for Lidl Italy, Kiabi, PwC, Red Bull, Super Bock and more.">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/png" href="img/favicon.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<!-- Link preview (LinkedIn, WhatsApp...): after publishing, replace YOUR-SITE-ADDRESS with your real
-     address, for example https://matteopaonessa.github.io, and remove the comment markers.
-<meta property="og:image" content="https://YOUR-SITE-ADDRESS/img/og.jpg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:url" content="https://matteopaonessa.github.io/">
+<meta property="og:image" content="https://matteopaonessa.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
--->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -268,7 +268,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title"><span class="line1"><span>Matteo</span></span><span class="line2"><span>Paonessa</span></span></h1>
       <figure class="portrait">
-          <img src="img/portrait.jpg" width="720" height="900" fetchpriority="high" decoding="async"
+          <img src="portrait.jpg" width="720" height="900" fetchpriority="high" decoding="async"
                alt="Matteo Paonessa smiling, wearing a dark shirt, in an office with a view over the city">
       </figure>
       <div class="hero-text">
@@ -310,7 +310,7 @@
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-head">
         <div class="avatar">
-          <img src="img/illustration.png" width="300" height="417" loading="lazy" decoding="async"
+          <img src="illustration.png" width="300" height="417" loading="lazy" decoding="async"
                alt="Illustration of Matteo, smiling, in a blue vest over a shirt">
         </div>
         <div>
@@ -338,13 +338,13 @@
 /* ------------------------------------------------------------------
    HOW TO EDIT
    - Each project is one object in PROJECTS below.
-   - "files" are the buttons inside each project. Put your PDFs in a
-     folder called "pdf" next to this page, or replace the paths with
-     full links (for example Google Drive share links).
+   - "files" are the buttons inside each project. The "href" is the exact
+     file name of the PDF uploaded next to this page, or a full link
+     (for example a Google Drive share link).
    - "cats" decides which filter a project appears under:
      brand, strategy, research, startup
    - "group" decides the section: thesis, brief, other
-   - Photos live in the "img" folder. The two theses use "photo" to show a picture on top.
+   - Photos sit next to index.html. The two theses use "photo" to show a picture on top.
 ------------------------------------------------------------------- */
 
 const FILTERS = [
@@ -368,22 +368,22 @@ const PROJECTS = [
     name: 'Lidl Italy',
     title: 'The future of in-store checkout, seen by grocers and customers',
     where: 'Master in Global Marketing, IPAM Lisbon, 2025',
-    photo: { src: 'img/ipam-graduation.jpg', alt: 'Matteo at the IPAM graduation ceremony 2024/25, wearing the orange graduation stole' },
+    photo: { src: 'ipam-graduation.jpg', alt: 'Matteo at the IPAM graduation ceremony 2024/25, wearing the orange graduation stole' },
     text: 'A case study with Lidl Italy on how checkout in supermarkets is likely to evolve, looking at both the grocer and the customer side. It combines a semi-structured interview with a Lidl manager (Sales Organization and Store Systems Team Leader) and a structured questionnaire sent to Italian customers.',
     tags: ['Mixed methods', 'Retail', 'Customer research'],
     cats: ['research'],
-    files: [{ label: 'Read the thesis (PDF)', href: 'pdf/lidl-master-thesis.pdf' }]
+    files: [{ label: 'Read the thesis (PDF)', href: "Matteo Paonessa_ Dissertation_2025_Master in Global Marketing_IPAM.pdf" }]
   },
   {
     id: 'willmedia', group: 'thesis', kind: 'Bachelor thesis',
     name: 'Will Media',
     title: 'Will Media: how an Italian media startup built its business model',
     where: 'Bachelor, IULM Milan, 2023',
-    photo: { src: 'img/iulm-graduation.jpg', alt: 'Matteo wearing the laurel wreath after his graduation at IULM' },
+    photo: { src: 'iulm-graduation.jpg', alt: 'Matteo wearing the laurel wreath after his graduation at IULM' },
     text: 'A case study on the Italian startup known for its approach to journalism and its social media content. Written with the help of its managing editor, it uses the Business Model Canvas to look at strengths, weaknesses, the reasons behind the growth and how the company can approach future challenges.',
     tags: ['Business Model Canvas', 'Media', 'Startup analysis'],
     cats: ['strategy'],
-    files: [{ label: 'Read the thesis (PDF)', href: 'pdf/will-media-bachelor-thesis.pdf' }]
+    files: [{ label: 'Read the thesis (PDF)', href: "Bachelor Thesis_ Matteo Paonessa (1).pdf" }]
   },
 
   /* ---------- Company briefs ---------- */
@@ -394,7 +394,7 @@ const PROJECTS = [
     text: 'A brief from Kiabi Portugal. The goal was a marketing strategy to raise awareness of the French retailer, which had just entered the Portuguese market.',
     tags: ['Brand awareness', 'Market entry', 'Retail'],
     cats: ['brand', 'strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/kiabi.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Global Marketing Strategy - Report Kiabi.pdf" }]
   },
   {
     id: 'pwc', group: 'brief', name: 'PwC',
@@ -403,7 +403,7 @@ const PROJECTS = [
     text: 'A brief from PwC Portugal to create a strategy that strengthens the firm\'s employer brand and attracts IT professionals, a profile that is increasingly in demand.',
     tags: ['Employer branding', 'Talent attraction'],
     cats: ['brand', 'strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/pwc.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "PwC.pdf" }]
   },
   {
     id: 'superbock', group: 'brief', name: 'Super Bock',
@@ -412,7 +412,7 @@ const PROJECTS = [
     text: 'We started by analysing the brand\'s positioning, then proposed digital strategies to reach the goals of the brief.',
     tags: ['Digital strategy', 'Positioning', 'FMCG'],
     cats: ['brand'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/super-bock.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Marketing Challenge_Report_Super Bock.pdf" }]
   },
   {
     id: 'sulydance', group: 'brief', name: 'Sulydance Academy',
@@ -421,7 +421,7 @@ const PROJECTS = [
     text: 'A real small business. We gathered and calculated its marketing metrics, then built a five-year marketing plan focused on the most important KPIs, aiming to make its efforts more efficient. A long, detailed report.',
     tags: ['Marketing KPIs', 'ROI', 'Planning'],
     cats: ['strategy', 'research'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/sulydance.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Report_Sulydance_marketing metrics & analytics_2024.pdf" }]
   },
   {
     id: 'nowa', group: 'brief', name: 'Nowa Jeans',
@@ -430,7 +430,7 @@ const PROJECTS = [
     text: 'A business plan for a fashion retailer founded in Portugal in 2023. After an in-depth analysis, we proposed a marketing and sales strategy with activities based on the latest trends and innovations in retail.',
     tags: ['Business plan', 'Retail', 'Marketing and sales'],
     cats: ['strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/nowa-jeans.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "NOWA Jeans report.pdf" }]
   },
   {
     id: 'redbull', group: 'brief', name: 'Red Bull',
@@ -439,7 +439,7 @@ const PROJECTS = [
     text: 'A brief from Red Bull Italy. We analysed the brand and the energy drink market in Italy, interviewed consumers and used laddering to find our leverage point. From there we developed the copy idea, selling idea and telling idea, brainstormed ads and built a communication plan across the marketing communication mix.',
     tags: ['Laddering', 'Creative strategy', 'Launch plan'],
     cats: ['brand'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/red-bull.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "REDBULL 2023.pdf" }]
   },
   {
     id: 'lemonsoda', group: 'brief', name: 'Lemonsoda',
@@ -448,7 +448,7 @@ const PROJECTS = [
     text: 'A marketing plan from a Lemonsoda brief to launch its summer product, a tonic water. We analysed the soft drinks market and competitors, designed the product and its graphics, then planned distribution, promotion and communication.',
     tags: ['Product launch', 'Go-to-market', 'Packaging'],
     cats: ['brand', 'strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/lemonsoda.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Lemon Soda 2022.pdf" }]
   },
   {
     id: 'viblio', group: 'brief', name: 'Viblio',
@@ -457,7 +457,7 @@ const PROJECTS = [
     text: 'Viblio, founded in 2021, offers professional training with content chosen from each person\'s interests by an AI facial-analysis algorithm. We contacted the CEO, analysed the brand ecosystem and the health of its touchpoints, then designed a way to improve the journey from inspiration to loyalty, using nudges and a consistent user experience.',
     tags: ['Customer journey', 'Touchpoints', 'Nudges'],
     cats: ['brand', 'strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/viblio.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Viblio 2022.pdf" }]
   },
   {
     id: 'veronesi', group: 'brief', name: 'Fondazione Umberto Veronesi',
@@ -466,7 +466,7 @@ const PROJECTS = [
     text: 'A brief from the Italian non-profit research foundation: create and run a campaign to raise funds for research and support the fight against smoking-related cancers.',
     tags: ['Fundraising', 'Non-profit', 'Campaign'],
     cats: ['brand'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/fondazione-veronesi.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Fondazione Umberto Veronesi 2022.pdf" }]
   },
   {
     id: 'zooppa', group: 'brief', name: 'Zooppa',
@@ -475,7 +475,7 @@ const PROJECTS = [
     text: 'The task was to create a social media advertising video for Zooppa, a creative platform that produces video and graphic content for well-known brands around the world.',
     tags: ['Video', 'Social media', 'Advertising'],
     cats: ['brand'],
-    files: [{ label: 'Watch the video', href: 'pdf/zooppa-video.mp4' }]
+    files: [{ label: 'Watch the video', href: "VID-20201029-WA0014.mp4" }]
   },
 
   /* ---------- Research, analysis and ideas ---------- */
@@ -486,7 +486,7 @@ const PROJECTS = [
     text: 'A study of whether and how the NBA luxury tax creates an unfair competitive environment. We followed the methods taught in class and used SPSS to test our hypotheses. Worth reading to the end if you like basketball.',
     tags: ['SPSS', 'Hypothesis testing', 'Sport'],
     cats: ['research'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/nba-luxury-tax.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "NBA - Luxury Tax, Super Teams, and the fairness of the system.docx.pdf" }]
   },
   {
     id: 'tommasi', group: 'other', name: 'Alessandro Tommasi',
@@ -495,7 +495,7 @@ const PROJECTS = [
     text: 'A report on Alessandro Tommasi as an example of leadership, written for the Disruptive Business Models unit.',
     tags: ['Leadership', 'Case study'],
     cats: ['strategy'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/alessandro-tommasi.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "report Alessandro Tommasi.pdf" }]
   },
   {
     id: 'exit', group: 'other', name: 'Exit',
@@ -505,8 +505,8 @@ const PROJECTS = [
     tags: ['Business Model Canvas', 'Financial plan', 'Pitch'],
     cats: ['startup', 'strategy'],
     files: [
-      { label: 'Read the pitch (PDF)', href: 'pdf/exit-pitch.pdf' },
-      { label: 'Business Model Canvas (PDF)', href: 'pdf/exit-business-model-canvas.pdf' }
+      { label: 'Read the pitch (PDF)', href: "Startup idea (Exit)- Entrepreneurship and Innovation 2022.pdf" },
+      { label: 'Business Model Canvas (PDF)', href: "Business Model Canvas Exit.pdf" }
     ]
   },
   {
@@ -516,7 +516,7 @@ const PROJECTS = [
     text: 'A business idea that turns a disused carriage into a "discotrain", a one-night party on a moving train between Milan, Turin and Como. We presented it by answering the Five Ws.',
     tags: ['Business idea', 'Pitch'],
     cats: ['startup'],
-    files: [{ label: 'Read the project (PDF)', href: 'pdf/triangle-of-passion.pdf' }]
+    files: [{ label: 'Read the project (PDF)', href: "English course 2022 - Business idea (The triangle of passion).pdf" }]
   },
   {
     id: 'opendot', group: 'other', name: 'Opendot',
@@ -525,7 +525,7 @@ const PROJECTS = [
     text: 'Field research in Milan at Opendot, a Fab Lab open to everyone, to understand the effects of the pandemic on this startup. The lab is a space for innovation, experimentation and rapid prototyping.',
     tags: ['Field research', 'Qualitative', 'Startup'],
     cats: ['research'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/opendot.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "Opendot 2021.pdf" }]
   },
   {
     id: 'tesla', group: 'other', name: 'Tesla Cybertruck',
@@ -534,7 +534,7 @@ const PROJECTS = [
     text: 'We chose the Cybertruck launch as a successful event of the year and analysed, described and commented on the communication activities around the electric pick-up, presented live worldwide.',
     tags: ['Event communication', 'Launch analysis'],
     cats: ['brand'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/tesla-cybertruck.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "TESLA (event launch Cybertruck) - 2021.pdf" }]
   },
   {
     id: 'happiness', group: 'other', name: 'Does work affect happiness?',
@@ -543,7 +543,7 @@ const PROJECTS = [
     text: 'A personal project on the relationship between work and happiness. I picked three key factors (income, employment rate and work-life balance), built a combined ranking of countries and compared it with the World Happiness Report ranking.',
     tags: ['Data analysis', 'Country ranking'],
     cats: ['research'],
-    files: [{ label: 'Read the research (PDF)', href: 'pdf/happiness-and-work.pdf' }]
+    files: [{ label: 'Read the research (PDF)', href: "Happiness and Work around the world - Research on the 3 major key factors in different countries.pdf" }]
   },
   {
     id: 'campaigns', group: 'other', name: 'Advertising campaigns',
@@ -552,7 +552,7 @@ const PROJECTS = [
     text: 'An analysis of three campaigns from different areas of public communication: one by WWF, one by Unicef and an awareness campaign from the Italian Ministry of Health.',
     tags: ['Campaign analysis', 'Public communication'],
     cats: ['brand', 'research'],
-    files: [{ label: 'Read the presentation (PDF)', href: 'pdf/ad-campaigns.pdf' }]
+    files: [{ label: 'Read the presentation (PDF)', href: "Gruppo Reykjavik_Project work comunicazione sociale 2023_ presentazione Canva.pdf" }]
   },
   {
     id: 'prato', group: 'other', name: 'Municipality of Prato',
@@ -561,7 +561,7 @@ const PROJECTS = [
     text: 'An analysis of the online communication strategy of the municipality of Prato, in Tuscany.',
     tags: ['Digital communication', 'Public sector'],
     cats: ['brand', 'research'],
-    files: [{ label: 'Read the report (PDF)', href: 'pdf/prato.pdf' }]
+    files: [{ label: 'Read the report (PDF)', href: "project work_ LABORATORIO DI COMUNICAZIONE PUBBLICA E TRASFORMAZIONE DIGITALE.pdf" }]
   }
 ];
 
@@ -571,8 +571,9 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const tagsHtml = tags => `<ul class="tags">${tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>`;
+const fileUrl = h => /^https?:/.test(h) ? h : encodeURI(h).replace(/&/g, '%26');
 const filesHtml = files => `<div class="files">${files.map((f, i) =>
-  `<a class="btn ${i === 0 ? 'btn-main' : 'btn-quiet'}" href="${esc(f.href)}" target="_blank" rel="noopener">${esc(f.label)}</a>`
+  `<a class="btn ${i === 0 ? 'btn-main' : 'btn-quiet'}" href="${esc(fileUrl(f.href))}" target="_blank" rel="noopener">${esc(f.label)}</a>`
 ).join('')}</div>`;
 
 function thesisHtml(p) {
